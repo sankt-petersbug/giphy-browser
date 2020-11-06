@@ -12,7 +12,7 @@ import styles from './App.module.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/giphy-browser">
       <ScrollTop />
       <div className={styles.app}>
         <Switch>

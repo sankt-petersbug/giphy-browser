@@ -1,6 +1,7 @@
 {
   "name": "giphy-browser",
   "version": "0.1.0",
+  "homepage": "http://sankt-petersbug.github.io/giphy-browser",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.2.5",
@@ -13,6 +14,7 @@
     "@types/react-dom": "^16.9.9",
     "@types/react-redux": "^7.1.7",
     "@types/react-router-dom": "^5.1.6",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.0",
@@ -24,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
