@@ -1,0 +1,41 @@
+.container {
+  height: 68px;
+  position: relative;
+  background-color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 499;
+}
+
+.container i {
+  display: block;
+  position: absolute;
+  width: 15px;
+  z-index: 3;
+  height: 20px;
+  font-size: 22px;
+  top: 24px;
+  left: 10px;
+  line-height: 32px;
+  opacity: 0.6;
+}
+
+.container input {
+  font-size: 18px;
+  border: none;
+  line-height: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 52px;
+  font-size: 22px;
+  outline: none;
+}
+
+.container > input:focus {
+  outline: none;
+}
